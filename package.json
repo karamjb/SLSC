@@ -1,6 +1,6 @@
 {
   "name": "sls-cache",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Smart Local Storage Cache",
   "main": "build/index.js",
   "scripts": {

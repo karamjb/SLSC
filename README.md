@@ -18,6 +18,7 @@ SLSCache.config({ cacheName: 'slscache', defaultTTL: 10 });
 | :---------- | :---------- | :--------- |
 | cacheName   | string      | slscache   |
 | TTL         | number      | 60 minutes |
+
 <br>
 
 ``` js
@@ -26,22 +27,27 @@ SLSCache.set('use unique key', 'data of any type without specific TTL');
 
 SLSCache.get('unique key');
 ```
+
 <br>
+
 ##### supporting typescript
+
 ```ts
 interface Interface {
   val: string;
 }
+
 const obj: Interface = { val: 'my value' };
 SLSCache.set('obj', obj);
 
 const data = SLSCache.get<Interface>('obj');
 console.log(data?.val);
 ```
+
 <br>
 
 | Methods     | args             |
-| :---        | :--- |
+| :---------- | :--------------- |
 | set         | (key, data, ttl) |
 | get         | key              |
 
